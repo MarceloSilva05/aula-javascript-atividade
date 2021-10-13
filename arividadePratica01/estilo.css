@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grupo{
+margin: 10vh auto;
+width: 320px;
+grid-template-columns: 80px 80px 80px 80px;
+ display: grid; 
+ grid-template-areas:
+ "tela tela tela tela"
+  "c c c c"
+  "numero numero numero direita"
+  "numero numero numero direita"
+  "numero numero numero direita"
+  "zero zero zero direita"
+  "vai vai vai vai"
+  ;
+}
+.tela{
+    grid-column: tela;
+    grid-area: tela;
+}
+.c{
+    grid-column: c;
+    grid-area: c;  
+}
+.vai{
+    grid-column:vai;
+    grid-area: vai;  
+} 
+.zero{
+    grid-area: zero;
+    grid-row: zero ;
+} 
+.zero:hover,.numero:hover,.direita:hover{
+background-color: #c600eb;
+}
+.c:hover{
+    background-color: red;
+}
+.vai:hover{
+    background-color: #00bfff;
+}
